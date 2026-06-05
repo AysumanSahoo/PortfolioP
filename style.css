@@ -1,0 +1,291 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#e0f7ff,#bdefff,#87cefa);
+    color:#222;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+    background:linear-gradient(90deg,#0099ff,#38bdf8)!important;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+    font-size:1.6rem;
+    font-weight:700;
+    color:#fff !important;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#e0f7ff !important;
+}
+
+/* Hero Section */
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #00bfff 0%,
+        #38bdf8 35%,
+        #7dd3fc 70%,
+        #e0f7ff 100%
+    );
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:700;
+    color:#fff;
+}
+
+.hero h3{
+    color:#f8fafc;
+    margin:15px 0;
+}
+
+.hero p{
+    color:#f1f5f9;
+    line-height:1.8;
+}
+
+.profile-img{
+    width: 400px !important;
+    height: 400px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid #cfd8dc;
+    display: block;
+    margin: 20px auto 0;
+}
+/* Buttons */
+.btn-primary{
+    background:#0284c7;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#0369a1;
+}
+
+.btn-success{
+    border:none;
+}
+
+/* Section Styling */
+section{
+    padding:80px 0;
+       scroll-margin-top: 90px;
+}
+
+section h2{
+    text-align:center;
+    font-weight:700;
+    margin-bottom:40px;
+    color:#0f172a;
+    position:relative;
+}
+
+section h2::after{
+    content:'';
+    width:80px;
+    height:4px;
+    background:#0ea5e9;
+    position:absolute;
+    bottom:-10px;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:10px;
+}
+
+/* About Section */
+#about{
+    background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(10px);
+}
+
+#about p{
+    line-height:1.9;
+    text-align:justify;
+}
+
+/* Skills */
+.skill-badge{
+    margin:8px;
+    padding:10px 18px;
+    font-size:15px;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.skill-badge:hover{
+    transform:translateY(-4px);
+}
+
+/* Cards */
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(12px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card-body h5{
+    font-weight:600;
+    color:#0f172a;
+}
+
+.card-body p{
+    color:#475569;
+}
+
+/* Projects */
+#projects{
+    background:#f8fcff;
+  
+    
+}
+/* Certifications Section*/
+#certification .card{
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+#certification .card:hover{
+    transform: translateY(-8px);
+}
+
+#certification .badge{
+    margin: 2px;
+}
+
+#certification .btn{
+    border-radius: 8px;
+}
+/* Experience Section*/
+
+.card{
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.skill-badge{
+    margin: 5px;
+    padding: 10px 15px;
+}
+
+.timeline-item{
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #0d6efd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* Contact Section */
+#contact{
+    background:linear-gradient(135deg,#e0f7ff,#dbeafe);
+}
+
+#contact .btn{
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+#contact .btn:hover{
+    transform:translateY(-4px);
+}
+
+/* Footer */
+footer{
+    background:linear-gradient(90deg,#0284c7,#38bdf8);
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+footer h5{
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#dbeafe;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0284c7;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+    padding-top:80px;
+}
+
+.hero h1{
+    font-size:2.3rem;
+}
+
+.hero h3{
+    font-size:1.3rem;
+}
+
+.profile-img{
+    max-width:50%;
+    margin-top:30px;
+}
+
+section{
+    padding:60px 15px;
+}
+
+}
